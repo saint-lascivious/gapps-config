@@ -303,18 +303,37 @@ ADVANCED FEATURES AND OPTIONS
 # WARNING: Because this feature gives you the ability to remove files that may be important to the proper function of your device, it is only recommended for very experienced users who know what they are doing.
 
 
+# ENABLE GOOGLE ASSISTANT
+###########################
+
+Open GApps can add ro.opa.eligible_device=true to the build.prop file, to enable Google Assistant. By default this feature is not enabled, but it can be activated by adding the GoogleAssistant keyword. If there is any line with ro.opa.eligible_device already in the build.prop it will NOT be overwritten.
+
+## Un-comment to activate the selection(s):
+#GoogleAssistant
+
+
 # FORCE DPI SETTING
 #####################
 
-# Open GApps normally selects the correct DPI-optimized app that suits your device [12], based on the information that is supplied by recovery and otherwise found in default.prop or build.prop. Sometimes one might want to override this DPI setting, e.g. for testing, in those situations the keyword forcedpiXXX can be used, where XXX is replaced with one of the valid default DPIs including: 160, 240, 320, 480, 560 or 640.
+# Open GApps normally selects the correct DPI-optimized app that suits your device [12], based on the information that is supplied by recovery and otherwise found in default.prop or build.prop. Sometimes one might want to override this DPI setting, e.g. for testing, in those situations the keyword forcedpiXXX can be used, where XXX is replaced with one of the valid default DPIs including: 120, 160, 213, 240, 260, 280, 300, 320, 340, 360, 400, 420, 480, 560, 640 or nodpi
 
 ## Un-comment to activate the selection(s):
+# forcedpi120
 # forcedpi160
+# forcedpi213
 # forcedpi240
+# forcedpi260
+# forcedpi280
+# forcedpi300
 # forcedpi320
+# forcedpi340
+# forcedpi360
+# forcedpi400
+# forcedpi420
 # forcedpi480
 # forcedpi560
 # forcedpi640
+# forcedpinodpi
 
 
 # FORCE NEW CAMERA
